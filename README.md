@@ -1,10 +1,10 @@
 # Bare Metal Experiments in Rust
 
-A simple and minimalist bare metal code experiment for learning purposes, using a blinking LED example, written in Rust using only core-lib for the Arduino UNO board.
+A simple and minimalist bare metal code experiment for microcontroller learning purposes, using simple examples like a blinking LED program, written in Rust using only core-lib.
 
 ## Overview
 
-This project demonstrates bare metal programming in Rust on an Arduino UNO board. It implements a classic LED blinking example that runs entirely without an operating system, using only Rust's core library and direct hardware manipulation.
+This project demonstrates bare metal programming in Rust on microcontrolers. It implements a few program examples that runs entirely without an operating system, using only Rust's core library and direct hardware manipulation.
 
 **Hardware Requirements**
 
@@ -12,6 +12,8 @@ This project demonstrates bare metal programming in Rust on an Arduino UNO board
 - USB cable for programming
 
 ## Build from source in Ubuntu based systems
+
+### Arduino UNO board instructions
 
 Install the required development dependencies:
 ```bash

@@ -1,6 +1,7 @@
 #![feature(asm_experimental_arch)]
 #![no_std]
 #![no_main]
+#![cfg(target_arch = "avr")]
 
 use core::arch::asm;
 use core::panic::PanicInfo;
@@ -34,7 +35,7 @@ fn clear_bit(reg_addr: *mut u8, bit_mask: u8) {
 // # Dalay Logic implementation
 
 // This function allow to pauses execution for a specific amount of time.
-#[inline(always)]
+#[inline(never)]
 fn delay_cycles(count: u16) {
     unsafe {
         let mut __count = count;
