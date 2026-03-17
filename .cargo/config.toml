@@ -1,5 +1,12 @@
 [target.avr-none]
 rustflags = ["-C", "target-cpu=atmega328p"]
 
+[target.xtensa-esp32-none-elf]
+rustflags = [
+    "-C", "link-arg=-Tsrc/bin/esp32_ttgo_tdisplay/link.x",
+    "-C", "link-arg=-nostartfiles",
+]
+runner = "espflash flash --monitor --chip esp32 --port /dev/ttyUSB0"
+
 [unstable]
 build-std = ["core"]

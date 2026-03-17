@@ -4,8 +4,14 @@ version = "0.1.0"
 edition = "2024"
 
 [[bin]]
-name = "arduino-uno-smd-r2-led-blinking"
-path = "src/bin/arduino_uno_smd_r2/led_blinking.rs"
+name = "arduino-uno-smd-r2-blinks"
+path = "src/bin/arduino_uno_smd_r2/blinks.rs"
+test = false
+bench = false
+
+[[bin]]
+name = "esp32-ttgo-tdisplay-blinks"
+path = "src/bin/esp32_ttgo_tdisplay/blinks.rs"
 test = false
 bench = false
 

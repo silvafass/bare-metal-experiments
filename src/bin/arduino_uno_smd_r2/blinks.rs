@@ -1,7 +1,7 @@
-#![feature(asm_experimental_arch)]
 #![no_std]
 #![no_main]
 #![cfg(target_arch = "avr")]
+#![feature(asm_experimental_arch)]
 
 use core::arch::asm;
 use core::panic::PanicInfo;

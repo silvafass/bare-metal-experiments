@@ -25,20 +25,19 @@ https://rust-lang.org/tools/install/
 And set the project to use the nightly version:
 ```bash
 rustup toolchain install nightly
-rustup override set nightly
 ```
 
 Build the binary:
 ```bash
-cargo build --target avr-none --bin arduino-uno-smd-r2-led-blinking --release
+cargo +nightly build --target avr-none --bin arduino-uno-smd-r2-blinks --release
 ```
 So, you can quickly test it using the Simavr simulator:
 ```bash
-simavr -m atmega328p ./target/avr-none/release/arduino-uno-smd-r2-led-blinking.elf
+simavr -m atmega328p ./target/avr-none/release/arduino-uno-smd-r2-blinks.elf
 ```
 And/or Flash the firmware by connecting the Arduino Uno board to the computer via USB and running the command below to update the board's firmware:
 ```bash
-avrdude -c arduino -P /dev/ttyACM0 -p atmega328p -D -U flash:w:target/avr-none/release/arduino-uno-smd-r2-led-blinking.elf:e
+avrdude -c arduino -P /dev/ttyACM0 -p atmega328p -D -U flash:w:target/avr-none/release/arduino-uno-smd-r2-blinks.elf:e
 ```
 
 ## Useful resources

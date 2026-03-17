@@ -8,6 +8,7 @@ This project demonstrates bare metal programming in Rust on microcontrolers. It 
 
 **Boards**
 * [Arduino Uno SMD R2](docs/arduino_uno_smd_r2.md)
+* [ESP32 TTGO T-Display](docs/esp32_ttgo_tdisplay.md)
 
 ## Useful resources
 
